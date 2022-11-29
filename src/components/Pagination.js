@@ -14,7 +14,7 @@ const Paginate = ({page}) => {
     // console.log(typeof Number(page));
     useEffect( () =>{
 if(page) dispatch(getPosts(page))
-    },[page])
+    },[page,dispatch])
 
     // const checkPag =() =>{
     //     console.log('at pagination');
